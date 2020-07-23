@@ -1,0 +1,15 @@
+{
+  "name": "slackOnCodePushed",
+  "version": "1.0.0",
+  "description": "https://cloud.google.com/source-repositories/docs/configuring-notifications",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gcloud functions deploy slackOnCodePushed --runtime=nodejs12 --project=mover-online-english --trigger-topic=code-commit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@slack/webhook": "^5.0.3"
+  }
+}
