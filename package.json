@@ -4,7 +4,7 @@
   "description": "https://cloud.google.com/source-repositories/docs/configuring-notifications",
   "main": "index.js",
   "scripts": {
-    "deploy": "gcloud functions deploy slackOnCodePushed --runtime=nodejs12 --project=mover-online-english --trigger-topic=code-commit"
+    "deploy": "gcloud functions deploy slackOnCodePushed --runtime=nodejs12 --project=[your-gcp-project] --trigger-topic=[your-topic]"
   },
   "keywords": [],
   "author": "",

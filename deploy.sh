@@ -1,8 +1,8 @@
-PROJECT=classfunc-api-250517
-TOPIC=code-commit
+PROJECT=your-gcp-project
+TOPIC=your-topic
 REPOS=('classfunc-api' 'classfunc-functions' 'classfunc.com' 'dev.classfunc.com')
 ## step 1 : create topic
-#gcloud pubsub topics create $TOPIC --project=$PROJECT
+gcloud pubsub topics create $TOPIC --project=$PROJECT
 
 ## step 2: add topic to repo
 for REPO in "${REPOS[@]}"; do
@@ -14,8 +14,8 @@ for REPO in "${REPOS[@]}"; do
 done
 
 ## step 3: deploy subscription function
-#gcloud functions deploy slackOnCodePushed \
-#  --runtime=nodejs12 \
-#  --project=$PROJECT \
-#  --trigger-topic=$TOPIC \
-#  --allow-unauthenticated
+gcloud functions deploy slackOnCodePushed \
+  --runtime=nodejs12 \
+  --project=$PROJECT \
+  --trigger-topic=$TOPIC \
+  --allow-unauthenticated
