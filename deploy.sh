@@ -15,7 +15,7 @@ done
 
 ## step 3: deploy subscription function
 gcloud functions deploy slackOnCodePushed \
-  --runtime=nodejs12 \
+  --runtime=nodejs14 \
   --project=$PROJECT \
   --trigger-topic=$TOPIC \
   --allow-unauthenticated
