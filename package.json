@@ -7,7 +7,7 @@
     "deploy": "gcloud functions deploy slackOnCodePushed --runtime=nodejs14 --project=[your-gcp-project] --trigger-topic=[your-topic]"
   },
   "keywords": [],
-  "author": "",
+  "author": "zerolethanh",
   "license": "MIT",
   "dependencies": {
     "@slack/webhook": "6.0.0"
