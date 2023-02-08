@@ -1,1 +1,3 @@
-### Moved to https://github.com/zerolethanh/dev-classfunc-demo/tree/master/slackOnCodePushed
+## Description:
+
+Notify to slack if code pushed to GCP CloudSource 
